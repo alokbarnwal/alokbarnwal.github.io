@@ -10,13 +10,13 @@
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-family: 'Poppins', sans-serif;
         }
 
         body {
             line-height: 1.6;
-            color: #333;
-            background-color: #f5f5f5;
+            color: #2c3e50;
+            background-color: #f8f9fa;
         }
 
         .container {
@@ -26,187 +26,163 @@
         }
 
         header {
-            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+            background: linear-gradient(135deg, #2193b0 0%, #6dd5ed 100%);
             color: white;
             padding: 60px 0;
-            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .profile-image {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            border: 5px solid rgba(255, 255, 255, 0.3);
+            object-fit: cover;
+            box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .profile-image:hover {
+            transform: scale(1.05);
         }
 
         .profile-info {
-            margin-bottom: 30px;
+            flex: 1;
+            padding-right: 40px;
         }
 
         .name {
-            font-size: 2.8em;
+            font-size: 3.2em;
             margin-bottom: 10px;
             font-weight: 700;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
         }
 
         .title {
-            font-size: 1.4em;
-            color: #e0e0e0;
+            font-size: 1.6em;
+            color: #ffffff;
             margin-bottom: 20px;
+            font-weight: 300;
         }
 
         .contact-info {
             display: flex;
-            justify-content: center;
-            gap: 20px;
+            gap: 25px;
             flex-wrap: wrap;
         }
 
         .contact-item {
             display: flex;
             align-items: center;
-            gap: 8px;
+            gap: 10px;
+            transition: transform 0.2s ease;
+        }
+
+        .contact-item:hover {
+            transform: translateY(-2px);
         }
 
         .section {
             background: white;
-            padding: 30px;
-            margin: 20px 0;
-            border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            padding: 35px;
+            margin: 25px 0;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            transition: transform 0.3s ease;
+        }
+
+        .section:hover {
+            transform: translateY(-5px);
         }
 
         .section-title {
-            font-size: 1.8em;
-            color: #1e3c72;
-            margin-bottom: 20px;
-            padding-bottom: 10px;
-            border-bottom: 2px solid #1e3c72;
+            font-size: 2em;
+            color: #2193b0;
+            margin-bottom: 25px;
+            padding-bottom: 15px;
+            border-bottom: 3px solid #2193b0;
         }
 
         .executive-summary {
-            font-size: 1.1em;
+            font-size: 1.2em;
             line-height: 1.8;
-            color: #555;
+            color: #34495e;
         }
 
         .skills-container {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 20px;
-        }
-
-        .skill-category {
-            margin-bottom: 20px;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
         }
 
         .skill-category h3 {
-            color: #1e3c72;
-            margin-bottom: 10px;
-        }
-
-        .skill-list {
-            list-style: none;
+            color: #2193b0;
+            margin-bottom: 15px;
+            font-size: 1.4em;
         }
 
         .skill-list li {
-            margin-bottom: 8px;
-            padding-left: 20px;
+            margin-bottom: 12px;
+            padding-left: 25px;
             position: relative;
         }
 
         .skill-list li::before {
-            content: "▹";
-            color: #1e3c72;
+            content: "→";
+            color: #2193b0;
             position: absolute;
             left: 0;
         }
 
         .experience-item {
+            padding: 20px;
+            border-left: 3px solid #2193b0;
             margin-bottom: 30px;
+            background: #f8f9fa;
+            border-radius: 0 10px 10px 0;
         }
 
         .experience-title {
-            font-size: 1.3em;
-            color: #1e3c72;
-            margin-bottom: 5px;
+            font-size: 1.4em;
+            color: #2193b0;
+            margin-bottom: 8px;
         }
 
         .experience-company {
             font-weight: 600;
-            color: #555;
+            color: #34495e;
             margin-bottom: 10px;
         }
 
         .experience-duration {
-            color: #666;
+            color: #7f8c8d;
             font-style: italic;
-            margin-bottom: 10px;
-        }
-
-        .experience-duties {
-            list-style: none;
-        }
-
-        .experience-duties li {
-            margin-bottom: 8px;
-            padding-left: 20px;
-            position: relative;
-        }
-
-        .experience-duties li::before {
-            content: "•";
-            color: #1e3c72;
-            position: absolute;
-            left: 0;
-        }
-
-        .education-item {
-            margin-bottom: 20px;
-        }
-
-        .certifications-list {
-            list-style: none;
-        }
-
-        .certifications-list li {
             margin-bottom: 15px;
-            padding-left: 25px;
-            position: relative;
-        }
-
-        .certifications-list li::before {
-            content: "🎓";
-            position: absolute;
-            left: 0;
-        }
-
-        .clients-list {
-            list-style: none;
-        }
-
-        .clients-list li {
-            margin-bottom: 15px;
-            padding-left: 25px;
-            position: relative;
-        }
-
-        .clients-list li::before {
-            content: "→";
-            color: #1e3c72;
-            position: absolute;
-            left: 0;
         }
 
         @media (max-width: 768px) {
-            .container {
-                padding: 10px;
+            .header-content {
+                flex-direction: column-reverse;
+                text-align: center;
             }
             
-            header {
-                padding: 30px 0;
+            .profile-image {
+                margin-bottom: 20px;
             }
             
-            .name {
-                font-size: 2em;
+            .profile-info {
+                padding-right: 0;
             }
             
             .contact-info {
-                flex-direction: column;
-                align-items: center;
+                justify-content: center;
             }
         }
     </style>
@@ -214,27 +190,31 @@
 <body>
     <header>
         <div class="container">
-            <div class="profile-info">
-                <h1 class="name">Alok Barnwal</h1>
-                <div class="title">Consultant | Government Advisory | Financial Analyst | Public Finance</div>
-                <div class="contact-info">
-                    <div class="contact-item">
-                        <i class="fas fa-envelope"></i>
-                        <a href="mailto:alokbarnwal50@gmail.com" style="color: white; text-decoration: none;">alokbarnwal50@gmail.com</a>
-                    </div>
-                    <div class="contact-item">
-                        <i class="fas fa-phone"></i>
-                        <span>+91-9837 585 610</span>
-                    </div>
-                    <div class="contact-item">
-                        <i class="fas fa-map-marker-alt"></i>
-                        <span>Jaipur, India</span>
+            <div class="header-content">
+                <div class="profile-info">
+                    <h1 class="name">Alok Barnwal</h1>
+                    <div class="title">Consultant | Government Advisory | Financial Analyst | Public Finance</div>
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <a href="mailto:alokbarnwal50@gmail.com" style="color: white; text-decoration: none;">alokbarnwal50@gmail.com</a>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <span>+91-9837 585 610</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Jaipur, India</span>
+                        </div>
                     </div>
                 </div>
+                <img src="C:\Users\Alok\OneDrive\Desktop\alok-portfolio\Photo.jpg" alt="Alok Barnwal" class="profile-image">
             </div>
         </div>
     </header>
 
+    <!-- Rest of the content remains the same -->
     <main class="container">
         <section class="section">
             <h2 class="section-title">Executive Summary</h2>
@@ -279,11 +259,14 @@
                 <div class="experience-company">Nupeak IT Services Pvt. Ltd.</div>
                 <div class="experience-duration">2023 - Present</div>
                 <ul class="experience-duties">
-                    <li>Led requirement analysis and project delivery for the IFMS Project under the Government of Rajasthan</li>
-                    <li>Conducted comprehensive analysis and concurrent audit of revenue, expenditure, and budget distribution</li>
-                    <li>Managed client interactions and stakeholder relationships</li>
-                    <li>Implemented process analytics for Employee Pension within the Government of Rajasthan</li>
-                    <li>Conducted Major and Minor Revenue Analysis with revenue forecasting for the Department of Mining and Geology</li>
+                    <li>Led requirement analysis and project delivery for the IFMS Project under the Government of Rajasthan, ensuring alignment with project objectives and timelines</li>
+                    <li>Conducted comprehensive analysis and concurrent audit of revenue, expenditure, and budget distribution analysis for multiple project plans, optimizing resource allocation and utilization</li>
+                    <li>Implemented process analytics for Employee Pension within the Government of Rajasthan, enhancing transparency and accountability in financial transactions</li>
+                    <li>Major and Minor Revenue Analysis with revenue forecasting conducted in the Department of Mining and Geology</li>
+                    <li>OTT and Non-OTT Revenue Analysis with revenue forecasting conducted on Transport Department Rajasthan</li>
+                    <li>Developed project documentation including BRD, SOP, and Concept Notes, ensuring clarity and consistency in project execution</li>
+                    <li>Managed client interactions, stakeholder relationships, and presentation preparations, facilitating effective communication and project understanding</li>
+                    <li>Utilized SAS Visual Analytics to prepare analytical dashboards and reports tailored to business requirements, enabling data-driven insights and decision-making</li>                
                 </ul>
             </div>
 
@@ -292,10 +275,13 @@
                 <div class="experience-company">National Health Mission, Govt. of UP</div>
                 <div class="experience-duration">2013 - 2022</div>
                 <ul class="experience-duties">
-                    <li>Directed financial management of NHM Funds and budget planning</li>
-                    <li>Managed accounts and coordinated various audits</li>
-                    <li>Implemented PFMS and FAMS platforms for financial transactions</li>
-                    <li>Led a team responsible for finance and accounts operations</li>
+                    <li>Directed financial management of NHM Funds, overseeing budget planning, analysis of revenue and expenditure, and budget management for multiple programs</li>
+                    <li>Managed accounts within organizations, coordinating various audits including internal, concurrent, statutory, and CAG audits to ensure compliance and accuracy</li>
+                    <li>Administered accounts of district and block PMUs, generating MIS reports, and maintaining databases to track financial performance</li>
+                    <li>Implemented PFMS and FAMS platforms for financial transactions, ensuring adherence to regulatory standards and optimizing resource allocation</li>
+                    <li>Conducted periodic inspections of healthcare facility accounts, identifying areas for improvement, and ensuring financial integrity</li>
+                    <li>Facilitated procurement processes by processing e-tenders, manual tenders, and quotations for purchasing items, optimizing cost-effectiveness</li>
+                    <li>Led a team responsible for finance and accounts, ensuring efficient operations and adherence to financial procedures and standards</li>
                 </ul>
             </div>
         </section>
