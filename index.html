@@ -5,32 +5,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Alok Barnwal - Professional Resume</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
     <style>
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-            font-family: 'Poppins', sans-serif;
+            font-family: 'Montserrat', sans-serif;
         }
 
         body {
-            line-height: 1.6;
-            color: #2c3e50;
-            background-color: #f8f9fa;
+            line-height: 1.5;
+            color: #1a1a1a;
+            background-color: #f5f5f5;
+            font-size: 14px;
         }
 
         .container {
-            max-width: 1200px;
+            max-width: 1000px;
             margin: 0 auto;
             padding: 20px;
         }
 
         header {
-            background: linear-gradient(135deg, #2193b0 0%, #6dd5ed 100%);
+            background: linear-gradient(135deg, #1a237e 0%, #283593 100%);
             color: white;
-            padding: 60px 0;
+            padding: 50px 0;
             position: relative;
             overflow: hidden;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
         }
 
         .header-content {
@@ -40,17 +43,13 @@
         }
 
         .profile-image {
-            width: 200px;
-            height: 200px;
+            width: 180px;
+            height: 180px;
             border-radius: 50%;
-            border: 5px solid rgba(255, 255, 255, 0.3);
+            border: 4px solid rgba(255, 255, 255, 0.2);
             object-fit: cover;
-            box-shadow: 0 8px 16px rgba(0,0,0,0.1);
-            transition: transform 0.3s ease;
-        }
-
-        .profile-image:hover {
-            transform: scale(1.05);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+            transition: transform 0.4s ease;
         }
 
         .profile-info {
@@ -59,122 +58,148 @@
         }
 
         .name {
-            font-size: 3.2em;
+            font-size: 2.5em;
             margin-bottom: 10px;
             font-weight: 700;
-            text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
         }
 
         .title {
-            font-size: 1.6em;
-            color: #ffffff;
+            font-size: 1.4em;
+            color: #e8eaf6;
             margin-bottom: 20px;
-            font-weight: 300;
+            font-weight: 400;
         }
 
         .contact-info {
             display: flex;
-            gap: 25px;
+            gap: 20px;
             flex-wrap: wrap;
-        }
-
-        .contact-item {
-            display: flex;
-            align-items: center;
-            gap: 10px;
-            transition: transform 0.2s ease;
-        }
-
-        .contact-item:hover {
-            transform: translateY(-2px);
+            font-size: 0.9em;
         }
 
         .section {
             background: white;
-            padding: 35px;
-            margin: 25px 0;
-            border-radius: 15px;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
-            transition: transform 0.3s ease;
-        }
-
-        .section:hover {
-            transform: translateY(-5px);
+            padding: 30px;
+            margin: 20px 0;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.06);
         }
 
         .section-title {
-            font-size: 2em;
-            color: #2193b0;
-            margin-bottom: 25px;
-            padding-bottom: 15px;
-            border-bottom: 3px solid #2193b0;
+            font-size: 1.8em;
+            color: #1a237e;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #1a237e;
+            font-weight: 600;
         }
 
         .executive-summary {
-            font-size: 1.2em;
-            line-height: 1.8;
-            color: #34495e;
+            font-size: 1em;
+            line-height: 1.6;
+            color: #2c3e50;
         }
 
         .skills-container {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            display: flex;
+            justify-content: space-between;
             gap: 30px;
         }
 
+        .skill-category {
+            flex: 1;
+        }
+
         .skill-category h3 {
-            color: #2193b0;
+            color: #1a237e;
             margin-bottom: 15px;
-            font-size: 1.4em;
+            font-size: 1.2em;
+            font-weight: 600;
         }
 
         .skill-list li {
-            margin-bottom: 12px;
-            padding-left: 25px;
+            margin-bottom: 10px;
+            padding-left: 20px;
             position: relative;
+            font-size: 0.95em;
         }
 
         .skill-list li::before {
-            content: "→";
-            color: #2193b0;
+            content: "";
+            color: #1a237e;
             position: absolute;
             left: 0;
         }
 
         .experience-item {
             padding: 20px;
-            border-left: 3px solid #2193b0;
-            margin-bottom: 30px;
+            border-left: 3px solid #1a237e;
+            margin-bottom: 25px;
             background: #f8f9fa;
-            border-radius: 0 10px 10px 0;
+            border-radius: 0 8px 8px 0;
         }
 
         .experience-title {
-            font-size: 1.4em;
-            color: #2193b0;
+            font-size: 1.2em;
+            color: #1a237e;
             margin-bottom: 8px;
+            font-weight: 600;
         }
 
         .experience-company {
             font-weight: 600;
-            color: #34495e;
-            margin-bottom: 10px;
+            color: #2c3e50;
+            margin-bottom: 8px;
+            font-size: 1em;
         }
 
         .experience-duration {
-            color: #7f8c8d;
+            color: #546e7a;
             font-style: italic;
-            margin-bottom: 15px;
+            margin-bottom: 12px;
+            font-size: 0.9em;
+        }
+
+        .experience-duties li {
+            margin-bottom: 8px;
+            line-height: 1.5;
+            font-size: 0.95em;
+            padding-left: 15px;
+            position: relative;
+        }
+
+        .experience-duties li::before {
+            content: "";
+            color: #1a237e;
+            position: absolute;
+            left: 0;
+        }
+
+        .certifications-list li, .clients-list li {
+            margin-bottom: 10px;
+            font-size: 0.95em;
+            padding-left: 15px;
+            position: relative;
+        }
+
+        .certifications-list li::before, .clients-list li::before {
+            content: "";
+            color: #1a237e;
+            position: absolute;
+            left: 0;
         }
 
         @media (max-width: 768px) {
             .header-content {
                 flex-direction: column-reverse;
                 text-align: center;
+                gap: 20px;
             }
             
             .profile-image {
-                margin-bottom: 20px;
+                width: 150px;
+                height: 150px;
+                margin-bottom: 15px;
             }
             
             .profile-info {
@@ -183,6 +208,18 @@
             
             .contact-info {
                 justify-content: center;
+            }
+
+            .name {
+                font-size: 2em;
+            }
+
+            .title {
+                font-size: 1.2em;
+            }
+
+            .skills-container {
+                flex-direction: row;
             }
         }
     </style>
@@ -235,17 +272,23 @@
                         <li>Concurrent Audit</li>
                         <li>Project Management</li>
                         <li>Business Analysis & Insights</li>
-                    </ul>
+                        <li>Data Visualization & Reporting</li>
+                        <li>Digital Transformation Initiatives</li>
+                        <li>Fraud Detection</li>
+                        <li>Critical Thinking & Problem-Solving</li>
+                        <li>Solution Design & Communication</li>
+                        <li>Stakeholder Engagement & Management</li>
+                        <li>Project Report Writing</li>
+                    </ul>                
                 </div>
                 <div class="skill-category">
                     <h3>Technical Skills</h3>
                     <ul class="skill-list">
-                        <li>SAS Visual Analytics</li>
-                        <li>Google Data Studio/Looker Studio</li>
-                        <li>Power BI</li>
-                        <li>SQL</li>
-                        <li>PFMS, FAMS, IFMS</li>
-                        <li>Notion, Looker Studio</li>
+                        <li>Data Visualization Tools: SAS Visual Analytics, Google Data Studio/Looker Studio, Power BI</li>
+                        <li>Advanced Analytics: SAS Visual Analytics, Visual Investigator</li>
+                        <li>Programming Languages: Python, SQL</li>
+                        <li>Government Financial Systems: PFMS, FAMS, IFMS</li>
+                        <li>Project and Documents Management: Notion, Looker Studio</li>
                     </ul>
                 </div>
             </div>
@@ -255,9 +298,7 @@
             <h2 class="section-title">Professional Experience</h2>
             
             <div class="experience-item">
-                <h3 class="experience-title">Subject Matter Expert - Financial Analyst</h3>
-                <div class="experience-company">Nupeak IT Services Pvt. Ltd.</div>
-                <div class="experience-duration">2023 - Present</div>
+                <h3 class="experience-title">Subject Matter Expert - Financial Analyst | Nupeak IT Services Pvt. Ltd. | Jan 2023 - Present</h3>                
                 <ul class="experience-duties">
                     <li>Led requirement analysis and project delivery for the IFMS Project under the Government of Rajasthan, ensuring alignment with project objectives and timelines</li>
                     <li>Conducted comprehensive analysis and concurrent audit of revenue, expenditure, and budget distribution analysis for multiple project plans, optimizing resource allocation and utilization</li>
@@ -271,9 +312,7 @@
             </div>
 
             <div class="experience-item">
-                <h3 class="experience-title">District Data Manager</h3>
-                <div class="experience-company">National Health Mission, Govt. of UP</div>
-                <div class="experience-duration">2013 - 2022</div>
+                <h3 class="experience-title">District Data Manager | National Health Mission, Govt. of UP | June 2013 - Dec 2022</h3>                
                 <ul class="experience-duties">
                     <li>Directed financial management of NHM Funds, overseeing budget planning, analysis of revenue and expenditure, and budget management for multiple programs</li>
                     <li>Managed accounts within organizations, coordinating various audits including internal, concurrent, statutory, and CAG audits to ensure compliance and accuracy</li>
