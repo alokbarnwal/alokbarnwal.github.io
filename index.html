@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alok Barnwal - Professional Resume</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            line-height: 1.6;
+            color: #333;
+            background-color: #f5f5f5;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header {
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+            color: white;
+            padding: 60px 0;
+            text-align: center;
+        }
+
+        .profile-info {
+            margin-bottom: 30px;
+        }
+
+        .name {
+            font-size: 2.8em;
+            margin-bottom: 10px;
+            font-weight: 700;
+        }
+
+        .title {
+            font-size: 1.4em;
+            color: #e0e0e0;
+            margin-bottom: 20px;
+        }
+
+        .contact-info {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .section {
+            background: white;
+            padding: 30px;
+            margin: 20px 0;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .section-title {
+            font-size: 1.8em;
+            color: #1e3c72;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #1e3c72;
+        }
+
+        .executive-summary {
+            font-size: 1.1em;
+            line-height: 1.8;
+            color: #555;
+        }
+
+        .skills-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .skill-category {
+            margin-bottom: 20px;
+        }
+
+        .skill-category h3 {
+            color: #1e3c72;
+            margin-bottom: 10px;
+        }
+
+        .skill-list {
+            list-style: none;
+        }
+
+        .skill-list li {
+            margin-bottom: 8px;
+            padding-left: 20px;
+            position: relative;
+        }
+
+        .skill-list li::before {
+            content: "▹";
+            color: #1e3c72;
+            position: absolute;
+            left: 0;
+        }
+
+        .experience-item {
+            margin-bottom: 30px;
+        }
+
+        .experience-title {
+            font-size: 1.3em;
+            color: #1e3c72;
+            margin-bottom: 5px;
+        }
+
+        .experience-company {
+            font-weight: 600;
+            color: #555;
+            margin-bottom: 10px;
+        }
+
+        .experience-duration {
+            color: #666;
+            font-style: italic;
+            margin-bottom: 10px;
+        }
+
+        .experience-duties {
+            list-style: none;
+        }
+
+        .experience-duties li {
+            margin-bottom: 8px;
+            padding-left: 20px;
+            position: relative;
+        }
+
+        .experience-duties li::before {
+            content: "•";
+            color: #1e3c72;
+            position: absolute;
+            left: 0;
+        }
+
+        .education-item {
+            margin-bottom: 20px;
+        }
+
+        .certifications-list {
+            list-style: none;
+        }
+
+        .certifications-list li {
+            margin-bottom: 15px;
+            padding-left: 25px;
+            position: relative;
+        }
+
+        .certifications-list li::before {
+            content: "🎓";
+            position: absolute;
+            left: 0;
+        }
+
+        .clients-list {
+            list-style: none;
+        }
+
+        .clients-list li {
+            margin-bottom: 15px;
+            padding-left: 25px;
+            position: relative;
+        }
+
+        .clients-list li::before {
+            content: "→";
+            color: #1e3c72;
+            position: absolute;
+            left: 0;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 10px;
+            }
+            
+            header {
+                padding: 30px 0;
+            }
+            
+            .name {
+                font-size: 2em;
+            }
+            
+            .contact-info {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="profile-info">
+                <h1 class="name">Alok Barnwal</h1>
+                <div class="title">Consultant | Government Advisory | Financial Analyst | Public Finance</div>
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <a href="mailto:alokbarnwal50@gmail.com" style="color: white; text-decoration: none;">alokbarnwal50@gmail.com</a>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <span>+91-9837 585 610</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Jaipur, India</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="section">
+            <h2 class="section-title">Executive Summary</h2>
+            <div class="executive-summary">
+                Accomplished finance analytics professional with over 11 years of extensive experience in Public Finance Management, Data Visualization, and Business Analysis. Proven expertise in delivering strategic solutions for revenue growth, cost optimization, fraud detection, and process improvement across government and non-government organizations. Adept at leveraging advanced analytics tools and technologies to derive actionable insights, drive informed decision-making, and enhance operational efficiencies.
+            </div>
+        </section>
+
+        <section class="section">
+            <h2 class="section-title">Key Skills & Expertise</h2>
+            <div class="skills-container">
+                <div class="skill-category">
+                    <h3>Core Competencies</h3>
+                    <ul class="skill-list">
+                        <li>Requirements Gathering (FRS, BRD) & Project Delivery</li>
+                        <li>Revenue & Expense Analysis</li>
+                        <li>Budgeting & Financial Planning</li>
+                        <li>Concurrent Audit</li>
+                        <li>Project Management</li>
+                        <li>Business Analysis & Insights</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3>Technical Skills</h3>
+                    <ul class="skill-list">
+                        <li>SAS Visual Analytics</li>
+                        <li>Google Data Studio/Looker Studio</li>
+                        <li>Power BI</li>
+                        <li>SQL</li>
+                        <li>PFMS, FAMS, IFMS</li>
+                        <li>Notion, Looker Studio</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2 class="section-title">Professional Experience</h2>
+            
+            <div class="experience-item">
+                <h3 class="experience-title">Subject Matter Expert - Financial Analyst</h3>
+                <div class="experience-company">Nupeak IT Services Pvt. Ltd.</div>
+                <div class="experience-duration">2023 - Present</div>
+                <ul class="experience-duties">
+                    <li>Led requirement analysis and project delivery for the IFMS Project under the Government of Rajasthan</li>
+                    <li>Conducted comprehensive analysis and concurrent audit of revenue, expenditure, and budget distribution</li>
+                    <li>Managed client interactions and stakeholder relationships</li>
+                    <li>Implemented process analytics for Employee Pension within the Government of Rajasthan</li>
+                    <li>Conducted Major and Minor Revenue Analysis with revenue forecasting for the Department of Mining and Geology</li>
+                </ul>
+            </div>
+
+            <div class="experience-item">
+                <h3 class="experience-title">District Data Manager</h3>
+                <div class="experience-company">National Health Mission, Govt. of UP</div>
+                <div class="experience-duration">2013 - 2022</div>
+                <ul class="experience-duties">
+                    <li>Directed financial management of NHM Funds and budget planning</li>
+                    <li>Managed accounts and coordinated various audits</li>
+                    <li>Implemented PFMS and FAMS platforms for financial transactions</li>
+                    <li>Led a team responsible for finance and accounts operations</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2 class="section-title">Education</h2>
+            <div class="education-item">
+                <h3 class="experience-title">Master's in Computer Application</h3>
+                <div class="experience-company">Sikkim Manipal University, Sikkim</div>
+                <div class="experience-duration">2024 (Appeared)</div>
+            </div>
+
+            <div class="education-item">
+                <h3 class="experience-title">Master's in Business Administration (IT and Finance)</h3>
+                <div class="experience-company">Swami Vivekanand Subharti University, Meerut</div>
+                <div class="experience-duration">2022</div>
+            </div>
+
+            <div class="education-item">
+                <h3 class="experience-title">Bachelor of Commerce</h3>
+                <div class="experience-company">Sidhu Kanhu Murmu University, Dumka, Jharkhand</div>
+                <div class="experience-duration">2013</div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2 class="section-title">Certifications</h2>
+            <ul class="certifications-list">
+                <li>Executive Development Program - Financial Data Analytics, IIM Kashipur</li>
+                <li>SAS Visual Business Analytics Specialization, SAS Institute India</li>
+                <li>Certified Business Analysis Professional, Simplilearn & IIBA</li>
+                <li>Public Finance Management System Training, SIHFW</li>
+                <li>E-Tender and Gem Portal Training, NHM Uttar Pradesh</li>
+            </ul>
+        </section>
+
+        <section class="section">
+            <h2 class="section-title">Major Clients & Projects</h2>
+            <ul class="clients-list">
+                <li>Implemented PFMS (DBT & REAT Module), SNA & FAMS system-based transactions on National Health Mission, Government of Uttar Pradesh</li>
+                <li>Revenue Analysis of Transport Department Rajasthan</li>
+                <li>Revenue Analysis and Macroeconomic factor analysis of Department of Mining and Geology</li>
+                <li>Prescriptive Analytics/Process Analysis of Employee Pension Portal, Pension Department of Rajasthan</li>
+                <li>Conducted Concurrent audit on Employee Salaries of Government of Rajasthan in IFMS Project</li>
+                <li>Fraud Analytics/Concurrent audit conducted on Social Security Pension, Social Justice, and Empowerment Department of Rajasthan</li>
+            </ul>
+        </section>
+    </main>
+</body>
+</html>
